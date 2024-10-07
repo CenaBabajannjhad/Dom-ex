@@ -2,7 +2,7 @@ const inputElement = document.querySelector('input');
 const buttonElement = document.querySelector('button');
 const inputStatusElement = document.querySelector('#input-status');
 
-window.addEventListener('keydown' , (e) => e.key === 'Enter' ? fakeFormHandler() : false )
+window.addEventListener('keydown' , (e) => e.key === 'Enter' && fakeFormHandler())
 buttonElement.addEventListener('click' , fakeFormHandler);
 
 function fakeFormHandler(){
