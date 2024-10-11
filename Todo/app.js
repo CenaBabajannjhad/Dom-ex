@@ -12,7 +12,7 @@ todoForm.addEventListener('submit' , e => {
     if(inputValue){
         todosContainer.appendChild(todoGenerator(inputValue))
         resetInputValue(formInput);
-        showDeleteAllTodosBtn(clearAllTodosBtn , 'SHOW');
+        DeleteAllTodosBtn(clearAllTodosBtn , 'SHOW');
     }else{
         alert('add shomething...')
     }
@@ -40,7 +40,7 @@ function todoGenerator(todo='todo'){
     todoDeleteBtnElement.addEventListener('click' , () => {
         todoWraperElement.remove();
         if(todosContainer.childElementCount === 0){
-            showDeleteAllTodosBtn(clearAllTodosBtn , 'HIDE');
+            DeleteAllTodosBtn(clearAllTodosBtn , 'HIDE');
         }
     })
 
@@ -54,7 +54,7 @@ function todoGenerator(todo='todo'){
     return todoWraperElement;
 }
 // show delete all todos btn
-function showDeleteAllTodosBtn(element , phase = 'SHOW'){
+function DeleteAllTodosBtn(element , phase = 'SHOW'){
     if(phase === 'SHOW'){
         element.style.top = '20px';
         element.style.left = '20px';
@@ -78,5 +78,5 @@ function resetInputValue(element){
 // clear all todos 
 function clearAllTodos(parent){
     parent.innerHTML = null;
-    showDeleteAllTodosBtn(clearAllTodosBtn , 'HIDE')
+    DeleteAllTodosBtn(clearAllTodosBtn , 'HIDE')
 }
