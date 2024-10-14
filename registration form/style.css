@@ -1,0 +1,10 @@
+body{
+    padding-top: 100px;
+    text-align: center;
+}
+input{
+    margin-bottom: 20px;
+}
+span{
+    color: red;
+}

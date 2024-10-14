@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form" action="#">
+        <div id="name-field">
+            <label for="name-input">enter your name : </label>
+            <input id="name-input" type="text" required>
+            <!-- <span>invalid field!!</span> -->
+        </div>
+        <div id="age-field">
+            <label for="age-input">enter your age : </label>
+            <input id="age-input" type="text" type="number" min="18" max="100" required>
+        </div>
+        <button type="submit">submit</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
